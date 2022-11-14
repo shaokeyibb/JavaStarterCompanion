@@ -14,7 +14,7 @@ var settings = Settings.DeserializeJsonFromFile();
 if (!File.Exists(settings.JavaPath))
 {
     Console.WriteLine("Java path is invalid.");
-    Environment.Exit(0);
+    Environment.Exit(-1);
 }
 
 if (!File.Exists(settings.JarPath))
